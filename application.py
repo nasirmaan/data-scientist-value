@@ -8,7 +8,7 @@ application = Flask(__name__)
 @application.route('/index')
 def home():
     #counting the quantity of objects on S3 bucket
-    url = 'https://wucg3iz2r4.execute-api.us-east-2.amazonaws.com/default/count-kaggle-top20-objects'
+    url = 'https://hvscyggpte.execute-api.us-west-2.amazonaws.com/default/OSI_LTD_MODEL'
     r = requests.get(url).json()
 
     return render_template('index.html', qty=r['size'])
