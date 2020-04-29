@@ -2,17 +2,21 @@ branch-defaults:
   master:
     environment: data-scientist-value-dev
     group_suffix: null
+environment-defaults:
+  data-scientist-value-dev:
+    branch: null
+    repository: null
 global:
   application_name: data-scientist-value
   branch: null
-  default_ec2_keyname: null
+  default_ec2_keyname: osiapp
   default_platform: Python 3.6
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: eb-cli
+  profile: null
   repository: null
   sc: git
   workspace_type: Application
